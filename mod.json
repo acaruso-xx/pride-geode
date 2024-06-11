@@ -1,0 +1,28 @@
+{
+	"geode": "3.0.0-alpha.2",
+	"gd": {
+		"win": "2.206"
+	},
+	"version": "v1.0.1",
+	"id": "acaruso.pride",
+	"name": "Pride Trails",
+	"developer": "acaruso",
+	"description": "Show your stripes!",
+	"tags": [ "enhancement", "customization" ],
+
+	"resources": {
+		"files": [
+			"resources/streaks.json",
+			"resources/streaks/*.png",
+			"resources/streaks/blur/*.png"
+		],
+		"sprites": [
+			"resources/commentBorder.png"
+		],
+		"spritesheets": {
+			"PrideSheet": [
+				"resources/PrideSheet/*.png"
+			]
+		}
+	}
+}
