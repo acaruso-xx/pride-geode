@@ -19,7 +19,10 @@ PrideManager* PrideManager::sharedManager() {
 bool PrideManager::init() {
     // Load streak data.
     auto fileUtils = CCFileUtils::sharedFileUtils();
-    auto path = fileUtils->fullPathForFilename("streaks.json"_spr, false);
+    std::string path = fileUtils->fullPathForFilename(
+        "streaks.json"_spr,
+        false
+    );
     auto json = file::readJson(path).unwrap();
 
     // Read streak data.
