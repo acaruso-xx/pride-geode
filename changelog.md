@@ -1,5 +1,11 @@
 # Pride Trails Changelog
 
+# v1.0.2
+
+Hotfix update.
+
+- Fix android not being present in mod.json
+
 # v1.0.1
 
 First public release.
