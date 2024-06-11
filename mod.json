@@ -9,6 +9,7 @@
 	"developer": "acaruso",
 	"description": "Show your stripes!",
 	"tags": [ "enhancement", "customization" ],
+	"repository": "https://github.com/acaruso-xx/pride-geode",
 
 	"resources": {
 		"files": [
