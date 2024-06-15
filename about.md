@@ -7,4 +7,4 @@ Happy pride month!
 
 ## Credits
 
-Mod icon created by [@DasshuGames](https://x.com/DasshuGames).
+Mod logo created by [@DasshuGames](https://x.com/DasshuGames).
