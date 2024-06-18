@@ -31,6 +31,8 @@ class $modify(CCMotionStreak) {
         return true;
     }
 
+// Unfortunately, these methods are too short to hook on android64.
+#ifndef GEODE_IS_ANDROID64
     void resumeStroke() {
         CCMotionStreak::resumeStroke();
 
@@ -44,6 +46,7 @@ class $modify(CCMotionStreak) {
         m_fields->isChecked = false;
         m_fields->isFlipped = false;
     }
+#endif
 
     void update(float delta) {
         CCMotionStreak::update(delta);
