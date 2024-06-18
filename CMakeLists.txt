@@ -1,12 +1,18 @@
 cmake_minimum_required(VERSION 3.21)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_OSX_ARCHITECTURES "x86_64")
+set(CMAKE_OSX_ARCHITECTURES "arm64;x86_64")
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 
 project(pride VERSION 1.0.3)
 
+# Disable Geode's precompiled headers.
 set(GEODE_DISABLE_PRECOMPILED_HEADERS ON)
+
+# Suppress annoying warning with overridden virtuals.
+if (CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
+    add_compile_options(-Wno-inconsistent-missing-override)
+endif()
 
 file(GLOB_RECURSE SOURCE_FILES src/**.cpp)
 add_library(${PROJECT_NAME} SHARED ${SOURCE_FILES})
