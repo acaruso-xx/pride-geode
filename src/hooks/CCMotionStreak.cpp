@@ -86,8 +86,8 @@ class $modify(CCMotionStreak) {
         if (m_fields->isFlipped) {
             const float texDelta = 1.0f / m_uNuPoints;
             for (unsigned int i = 0; i < m_uNuPoints; i++) {
-                m_pTexCoords[i * 2] = tex2(1.0f, texDelta);
-                m_pTexCoords[i * 2 + 1] = tex2(0.0f, texDelta);
+                m_pTexCoords[i * 2] = tex2(1.0f, texDelta * i);
+                m_pTexCoords[i * 2 + 1] = tex2(0.0f, texDelta * i);
             }
         }
     }
