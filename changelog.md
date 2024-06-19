@@ -1,5 +1,10 @@
 # Pride Trails Changelog
 
+## v1.0.4
+
+- Fix crashes on android64
+- Fix graphical glitch when using certain trails
+
 ## v1.0.3
 
 - Updated for Geode v3.0.0-beta.1

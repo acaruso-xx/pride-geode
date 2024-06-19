@@ -4,7 +4,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_OSX_ARCHITECTURES "arm64;x86_64")
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 
-project(pride VERSION 1.0.3)
+project(pride VERSION 1.0.4)
 
 # Disable Geode's precompiled headers.
 set(GEODE_DISABLE_PRECOMPILED_HEADERS ON)
