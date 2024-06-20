@@ -1,5 +1,4 @@
 #include "PrideFakePlayer.hpp"
-#include "Geode/cocos/cocoa/CCAffineTransform.h"
 
 #include <cmath>
 #include <new>
