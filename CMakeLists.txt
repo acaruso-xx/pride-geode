@@ -9,6 +9,9 @@ project(pride VERSION 1.0.4)
 # Disable Geode's precompiled headers.
 set(GEODE_DISABLE_PRECOMPILED_HEADERS ON)
 
+# Use bindings from submodule.
+set(GEODE_BINDINGS_REPO_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bindings)
+
 # Suppress annoying warning with overridden virtuals.
 if (CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
     add_compile_options(-Wno-inconsistent-missing-override)
