@@ -27,9 +27,7 @@ bool PridePreviewLayer::init() {
     auto GM = GameManager::sharedState();
 
     // Setup background.
-    // GameManager::getBGTexture has no bindings.
-    GM->loadBackground(1);
-    m_background = CCSprite::create("game_bg_01_001.png");
+    m_background = CCSprite::create(GM->getBGTexture(1));
     m_background->setPosition(contentSize / 2.0f);
     m_background->setScale(0.8f);
     m_background->setColor({ 0x00, 0x66, 0xff });
