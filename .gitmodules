@@ -1,4 +1,0 @@
-[submodule "bindings"]
-	path = bindings
-	url = https://github.com/acaruso-xx/bindings
-	branch = pride-macos
